@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+			<input class="output" type="text" id="result"></input>	
+			<div class="press">
+				<input type="button" value="+" onclick="display('+')" class="opr btn row1 col1"></input>
+				<input type="button" value="-" onclick="display('-')" class="btn row1 col2"></input>
+				<input type="button" value="&times" onclick="display('*')" class="btn row1 col3"></input>
+				<input type="button" value="&divide" onclick="display('/')" class="btn row1 col4"></input>
+				<input type="button" value="9" onclick="display('9')" class="btn row2 col1"></input>
+				<input type="button" value="8" onclick="display('8')" class="btn row2 col2"></input>
+				<input type="button" value="7" onclick="display('7')" class="btn row2 col3"></input>
+				<input type="button" value="M" onclick="history()" class="btn row2 col4"></input>
+				<input type="button" value="6" onclick="display('6')" class="btn row3 col1"></input>
+				<input type="button" value="5" onclick="display('5')" class="btn row3 col2"></input>
+				<input type="button" value="4" onclick="display('4')" class="btn row3 col3"></input>
+				<input type="button" value="3" onclick="display('3')" class="btn row4 col1"></input>
+				<input type="button" value="2" onclick="display('2')" class="btn row4 col2"></input>
+				<input type="button" value="1" onclick="display('1')" class="btn row4 col3"></input>
+				<input type="button" value="0" onclick="display('0')" class="btn row5 col1"></input>
+				<input type="button" value="." onclick="display('.')" class="btn row5 col2"></input>
+				<input type="button" value="C" onclick="clearChar()" class="btn row5 col3" id="clr"></input>
+				<input type="button" value="CE" onclick="clearScreen()" class="btn row5 col4"></input>
+				<input type="button" value="=" onclick="calculate()" class="btn equal"></input>
+			</div>
+
+	</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
